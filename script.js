@@ -64,7 +64,7 @@ applyBtn.addEventListener("click", () => {
                 allList[i].innerHTML = `${item.name} -- <span style="color:red;text-decoration: line-through;">${originalPrice}</span> <br>New Price: $${discountedPrice}`
             });
         } else {
-            console.log('iscoupon yleobaa')
+            console.log('Invalid Coupon')
         }
     }
     else{
@@ -105,6 +105,7 @@ async function postProduct() {
 }
 
 checkOut.addEventListener('click', postProduct);
+
 
 
 
